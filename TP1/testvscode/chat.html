@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat</title>
+</head>
+<body>
+    <header>
+        <h1>Chat en ligne</h1>
+        <nav>
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="authentification.html">Chat</a></li>
+                <li>
+                    <a href="https://isen-ouest.fr" target="_blank">
+                        <img src="images/logo_isen.png" alt="Logo ISEN">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Chat</h2> <form> <p>
+                <label>Canaux :</label>
+                <select name="canaux">
+                    <option value="">-Choisissez un canal-</option>
+                    <option value="">-general-</option>
+                    <option value="">-Tunnel-</option>
+                    <option value="">-Technique -</option>
+                </select>
+                <label>Rafraichissement :</label>
+                <input type="number" placeholder="Entrez le délai de rafraîchissement"> secondes </p>
+            
+            <textarea cols="100" rows="10" readonly></textarea> 
+            
+            <p>
+                <label for="msg">Message :</label>
+                <input type="text" id="msg" name="msg" placeholder="Entrez votre message" required> </p>
+            
+            <p>
+                <button type="button">Se déconnecter</button> <button type="submit">Envoyer</button> </p>
+        </form>
+    </section>
+
+    <footer>
+        <p>All content copyright &copy; A3.</p>
+        <a href="https://isen-ouest.fr" target="_blank">Lien vers la page du Programmeur</a>
+    </footer>
+</body>
+</html>
