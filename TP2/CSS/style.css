@@ -1,0 +1,155 @@
+/* --- STYLE COMMUN --- */
+
+body {
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    background-color: #EADDC4;
+    font-size: 16px;
+    margin: 0;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* --- TITRE PRINCIPAL --- */
+
+h1 {
+    font-family: 'Marko One', Georgia, serif;
+    font-size: 2.5em; 
+    font-weight: bold;
+    color: #CC6600;
+    text-shadow: 0.2em 0.2em #D3D3D3;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+}
+
+/* --- PIED DE PAGE --- */
+
+footer {
+    background-color: #783F27;
+    color: #EADDC4;
+    font-size: 0.8em;
+    padding: 0.5em;
+}
+
+footer a {
+    color: inherit;
+}
+
+/* --- LOGO --- */
+
+img {
+    width: 100px;
+    height: 50px;
+}
+
+/* --- MENU DE NAVIGATION --- */
+
+ul {
+    list-style-type: none;
+    background-color: #783F27;
+    display: flex;
+    padding: 0;
+    margin: 0.5em;
+    justify-content: center;
+}
+
+li {
+    display: block;
+    border: 1px solid;
+    border-radius: 0.5em;
+    padding: 0.5em 1em;
+}
+
+li a {
+    text-decoration: none;
+    color: #DC6903;
+}
+
+li a:hover {
+    color: #F9AB33;
+}
+
+/* Couleurs d'arrière-plan spécifiques aux pages */
+.active {
+    background-color: #EADDC4;
+}
+
+/* --- TITRES DE PAGES --- */
+
+h2 {
+    text-transform: uppercase;
+    color: #7A0002;
+    letter-spacing: 0.2em;
+}
+
+/* --- CADRES ET CONTENEURS --- */
+
+.cadre {
+    border: double #783F27;
+    border-radius: 25px;
+    margin: 2.5%;
+    padding: 1em;
+}
+
+/* --- CHAMPS DE SAISIE --- */
+
+input[type="text"], 
+input[type="password"] {
+    border-radius: 8px;
+    font-size: 18px;
+    padding: 4px 20px 0 20px;
+}
+
+/* --- BOUTONS --- */
+
+button, 
+input[type="submit"] {
+    background-color: #783F27;
+    border-radius: 12px;
+    border: none;
+    height: 30px;
+    margin-top: 10px;
+    color: #D3D3D3;
+    cursor: grab;
+}
+
+/* --- CHECKBOX --- */
+
+input[type="checkbox"] {
+    width: 1.15em;
+    height: 1.15em;
+}
+
+/* --- PAGE CHAT SPÉCIFIQUE --- */
+
+select {
+    width: 190px;
+    height: 30px;
+    color: #783F27;
+    background-color: #eeeeee;
+    border-radius: 5px;
+    box-shadow: 4px 4px #d2cece;
+}
+
+textarea {
+    border: dotted;
+    cursor: not-allowed;
+    background-color: #ded1c5;
+}
+
+/* --- MISES EN PAGE GRID --- */
+
+.grid-auth {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    justify-content: center;
+}
+
+.grid-chat {
+    display: grid;
+    grid-row-gap: 1em;
+}

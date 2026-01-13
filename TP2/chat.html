@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat - Session</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marko+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <h1>CHAT EN LIGNE</h1> <nav>
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li class="active"><a href="authentification.html">Chat</a></li>
+                <li>
+                    <a href="https://isen-ouest.fr" target="_blank">
+                        <img src="images/logo_isen.png" alt="Logo ISEN">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="cadre grid-chat">
+        <h2>CHAT</h2> <form>
+            <div class="options-ligne">
+                <label>Canaux :</label>
+                <select name="canaux">
+                    <option value="">Choisissez un salon</option>
+                    <option value="general">general</option>
+                    <option value="tunnel">Tunnel</option>
+                    <option value="technique">Technique</option>
+                </select>
+
+                <label>Rafraichissement :</label>
+                <input type="text" placeholder="Délai de rafraîchissement"> 
+                <span>secondes</span>
+            </div>
+            
+            <textarea cols="100" rows="10" readonly></textarea> 
+            
+            <div class="message-ligne">
+                <label for="msg">Message ></label>
+                <input type="text" id="msg" name="msg" placeholder="Entrez votre message" required>
+                
+                <button type="submit">Envoyer</button>
+                <button type="button">Se déconnecter</button>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p>All content copyright &copy; A3.</p> <a href="https://isen-ouest.fr" target="_blank">Lien vers la page du Programmeur</a>
+    </footer>
+</body>
+</html>
